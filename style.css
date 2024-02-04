@@ -394,6 +394,7 @@ main{
     .mountain-4{
         width:90%;
         height: 52.656%;
+        top:79%;
     }
     
     .mountain-3{
@@ -411,7 +412,7 @@ main{
     .mountain-2{
         width:90%;
         height: 66.12%;
-        top:70%;
+        top:72%;
     }
     
     .mountain-1{
@@ -423,7 +424,7 @@ main{
     
     .sun-rays{
         width:initial;
-        height: 50.112%;
+        height: 30.112%;
     }
     
     .black-shadow{
@@ -433,7 +434,13 @@ main{
     
     .fog-1{
         width:initial;
-        height: 178.88%;
+        height: 60.88%;
+        top:80%;
+    }
+
+    .vignette{
+        width: 100%;
+        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0)75% , rgba(0, 0, 0, 0.2));
     }
     
 }
