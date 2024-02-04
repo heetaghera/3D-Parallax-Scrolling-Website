@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #A2E1F1;
+}
+
+.logo{
+    width: 100px;
+    background-color: transparent;
+}
+
+header{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.237);
+    padding: 1vw 0;
+    position: absolute;
+    z-index: 9999;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 92vw;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 2vw;
+}
+
+.hamburger{
+    padding-left: 2.2vw;
+}
+
+.hamburger a{
+    padding: 0;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.068);
+    border-radius: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger a .bar{
+    position: relative;
+    height: 2px;
+    width: 25px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.hamburger a .bar::before ,.hamburger a .bar::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    background-color: #ffffff;
+    left: 4.5px;
+    border-radius: 20px;
+}
+
+.hamburger a .bar::before{
+    top: -5.5px;
+}
+
+.hamburger a .bar::after{
+    top: 5.5px;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    pointer-events: none;
+}
+
+::selection{
+    background-color: #16914e86;
+}
+
+.parallax{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    transition: 0.5s cubic-bezier(.2,.49,.32,.99);
+}
+
+.bg-img{
+    width: 194.44%;
+    top: 7%;
+    left: 50.69%;
+    z-index: 1;
+}
+
+.fog-7{
+    width: 132%;
+    top: 37.7%;
+    left: 70.8%;
+    z-index: 2;
+}
+
+.mountain-10{
+    width: 61.94%;
+    top: 58.5%;
+    left: 65.97%;
+    z-index: 3;
+}
+
+.fog-6{
+    width: 131%;
+    top: 60.5%;
+    left: 50.7%;
+    z-index: 4;
+}
+
+.mountain-9{
+    width: 32.64%;
+    top: 63.95%;
+    left: 17%;
+    z-index: 5;
+}
+
+.mountain-8{
+    width: 56.25%;
+    top: 64.5%;
+    left: 35.97%;
+    z-index: 6;
+}
+
+.fog-5{
+    width: 31.25%;
+    top: 69.75%;
+    left: 51.39%;
+    z-index: 7;
+}
+
+.mountain-7{
+    width: 37.36%;
+    top: 65.18%;
+    left: 70.83%;
+    z-index: 8;
+}
+
+.text{
+    position: absolute;
+    color: #fff;
+    top: 28.7%;
+    left: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    z-index: 9;
+    pointer-events: auto;
+}
+
+.text h2{
+    font-weight: 100;
+    font-size: 100px;
+}
+
+.text h1{
+    font-weight: 700;
+    font-size: 130px;
+}
+
+.mountain-6{
+    width: 28.33%;
+    top: 57.41%;
+    left: 90.97%;
+    z-index: 10;
+}
+
+.fog-4{
+    width: 40.97%;
+    top: 77.53%;
+    left: 45.83%;
+    z-index: 11;
+}
+
+.mountain-5{
+    width: 43.4%;
+    top: 80.86%;
+    left:59.03%;
+    z-index: 12;
+}
+
+.fog-3{
+    width: 111.11%;
+    top: 63.58%;
+    left: 48.95%;
+    z-index: 13;
+}
+
+.mountain-4{
+    width: 54.16%;
+    top: 74.2%;
+    left: 24.54%;
+    z-index: 14;
+}
+
+.mountain-3{
+    width:36.11%;
+    top: 63.58%;
+    left: 104.17%;
+    z-index: 15;
+}
+
+.fog-2{
+    width: 34.72%;
+    top: 54.32%;
+    left: 32.64%;
+    z-index: 16;
+}
+
+.mountain-2{
+    width: 44.45%;
+    top: 63.58%;
+    left: 77.78%;
+    z-index: 17;
+}
+
+.mountain-1{
+    width: 22.92%;
+    top: 61.12%;
+    left: 6.25%;
+    z-index: 18;
+}
+
+.sun-rays{
+    position: absolute;
+    width: 41.32%;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 19; 
+}
+
+.black-shadow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 20;
+}
+
+.fog-1{
+    width: 111.8%;
+    top: 59.26%;
+    left: 50.69%;
+    z-index: 21;
+}
+
+.vignette{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    pointer-events: none;
+    opacity: 0;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0)65% , rgba(0, 0, 0, 0.7));
+}
+
+@media (max-width: 1100px){
+    .text h1{
+        font-size: 5.8rem;
+    }
+    .text h2{
+        font-size: 4.7rem;
+    }
+}
+
+@media (max-width: 725px){
+    .text h1{
+        font-size: 4.5rem;
+    }
+    .text h2{
+        font-size: 4.1rem;
+    }
+
+    header nav{
+        padding: 0 1rem;
+    }
+
+    .logo{
+        width: 75px;
+    }
+
+    header ul a{
+        font-size: 0.73rem;
+        padding: 0 0.9rem;
+    }
+    
+    .search a{
+        font-size: 0.85rem;
+        padding: 0 1.8rem;
+    }
+
+    .hamburger {
+        padding-left: 0.9rem;
+    }
+
+    .hamburger a{
+        height: 30px;
+        width: 30px;
+    }
+
+    .bg-img{
+        width: initial;
+        height: 311.104%;
+    }
+    
+    .fog-7{
+        width: initial;
+        height: 211.2%;
+    }
+    
+    .mountain-10{
+        width: initial;
+        height: 99.104%;
+    }
+    
+    .fog-6{
+        width: initial;
+        height: 209.6%;
+    }
+    
+    .mountain-9{
+        width: initial;
+        height: 52.224%;
+    }
+    
+    .mountain-8{
+        width: initial;
+        height: 90%;
+    }
+    
+    .fog-5{
+        width: initial;
+        height: 50%;
+    }
+    
+    .mountain-7{
+        width: initial;
+        height: 59.776%;
+    }
+
+    .mountain-6{
+        width:initial;
+        height: 45.328%;
+    }
+    
+    .fog-4{
+        width:initial;
+        height:65.552%;
+    }
+    
+    .mountain-5{
+        width:initial;
+        height: 69.44%;
+    }
+    
+    .fog-3{
+        width:initial;
+        height: 101.728%;
+    }
+    
+    .mountain-4{
+        width:90%;
+        height: 52.656%;
+    }
+    
+    .mountain-3{
+        width:initial;
+        height: 45.776%;
+        left: 86%;
+        top: 75%;
+    }
+    
+    .fog-2{
+        width:initial;
+        height: 55.552%;
+    }
+    
+    .mountain-2{
+        width:90%;
+        height: 66.12%;
+        top:70%;
+    }
+    
+    .mountain-1{
+        width:initial;
+        height: 65.672%;
+        top: 70%;
+        left: 15%;
+    }
+    
+    .sun-rays{
+        width:initial;
+        height: 50.112%;
+    }
+    
+    .black-shadow{
+        width:initial;
+        height: 160%;
+    }
+    
+    .fog-1{
+        width:initial;
+        height: 178.88%;
+    }
+    
+}
+
+@media(max-width: 520px){
+    .text h1{
+        font-size: 3.3rem;
+    }
+
+    .text h2{
+        font-size: 2.6rem;
+    }
+}
